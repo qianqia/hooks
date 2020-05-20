@@ -1,0 +1,51 @@
+.block {
+  position: relative;
+  display: inline-block;
+  overflow:hidden;
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+}
+.block_hoverer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .3s ease;
+}
+.block_hoverer:nth-child(1) {
+  background: red;
+  top: -90%;
+}
+
+.block_hoverer:nth-child(2) {
+  background: lime;
+  top: 90%;
+}
+
+.block_hoverer:nth-child(3) {
+  background: orange;
+  left: -90%;
+}
+
+.block_hoverer:nth-child(4) {
+  background: blue;
+  left: 90%;
+}
+.block_hoverer:hover {
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+.block_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 200px;
+  background: #333;
+  color: #FFF;
+}
